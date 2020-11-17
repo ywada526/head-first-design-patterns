@@ -20,4 +20,10 @@ export abstract class Duck {
   swim() {
     console.log('すべての鴨は浮かびます。おとりの鴨でも！')
   }
+  setQuackBehavior(quackBehavior: QuackBehavior) {
+    this.quackBehavior = quackBehavior
+  }
+  setFlyBehavior(flyBehavior: FlyBehavior) {
+    this.flyBehavior = flyBehavior
+  }
 }
